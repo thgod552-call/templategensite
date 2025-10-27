@@ -27,9 +27,10 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 transition-all duration-700 animate-fadein">
-      <div className="bg-white bg-opacity-90 backdrop-blur-lg rounded-2xl shadow-2xl p-8 w-full max-w-md transform transition-all duration-700 hover:scale-105 animate-fadein">
-        <h1 className="text-4xl font-extrabold text-center text-indigo-600 mb-6 drop-shadow-lg transition-all duration-700">Welcome to TemplateGen</h1>
+  <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 transition-all duration-700 animate-fadein">
+      <div className="bg-white bg-opacity-95 backdrop-blur-lg rounded-2xl shadow-2xl p-8 w-full max-w-md transform transition-all duration-500 hover:scale-105">
+        <h1 className="text-3xl font-extrabold text-center text-indigo-600 mb-2 drop-shadow-lg">Login to your account</h1>
+        <p className="text-center text-gray-500 mb-6">Enter your details to continue</p>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label className="block text-lg font-semibold text-gray-700 mb-2">Name</label>

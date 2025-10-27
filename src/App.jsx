@@ -21,6 +21,12 @@ function RequireAuth({ children }) {
 export default function App() {
   const location = useLocation()
   const isLogin = location.pathname === '/login'
+  // Always clear user when visiting /login for testing
+  React.useEffect(() => {
+    if (isLogin) {
+      localStorage.removeItem(STORAGE_KEY)
+    }
+  }, [isLogin])
   return (
     <div className="min-h-screen">
       {!isLogin && <Header />}
